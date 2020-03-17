@@ -89,7 +89,7 @@
           repoName={data.name}
           repoDescription={data.description !== null ? data.description : ''}
           repoUrl={data.html_url}
-          repoLanguage={data.language}
+          repoLanguage={data.language !== null ? data.language : 'Unknown'}
           repoSize={data.size}
           repoCreatedAt={moment(data.created_at).format('llll')} />
       {/each}

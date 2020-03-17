@@ -8,7 +8,7 @@
   let isUser = false;
   let errorMsg = "";
 
-  let user = "maja0426";
+  let user = "";
 
   function ErrorMsg(message) {
     this.message = message;
@@ -23,11 +23,8 @@
 
     if (githubUser) {
       isUser = true;
-      /* const userFullName = gh.forUsers(user.name);
-      console.log(userFullName); */
       await githubUser.listRepos(function(err, repos) {
         if (!err) {
-          // look at all the repos!
           console.log(repos);
           datas = repos;
         } else {

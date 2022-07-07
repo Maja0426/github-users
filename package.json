@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "github-api": "^3.3.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "sirv-cli": "^0.4.4"
   }
 }
